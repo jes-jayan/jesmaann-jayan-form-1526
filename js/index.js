@@ -45,7 +45,9 @@ if (msg.value) {
 }
 
 console.log('COLLECTED DATA:');
-console.log(data);
+const datavalues = Object.values(data);
+console.log(datavalues);
+
 console.log('ERRORS:');
 console.log(errors);
 
