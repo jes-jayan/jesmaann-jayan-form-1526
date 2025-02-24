@@ -1,0 +1,126 @@
+:root {
+    --col1: #DDD;
+    --col2: #F5F5F5;
+    --col3: #6495ED;
+
+    --headfont: 'Arial', sans-serif;
+    --bodyfont: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bodyfont);
+    font-size: 1 rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headfont);
+}
+
+.contact-form {
+    border: solid 1px var(--col1);
+    background-color: var(--col2);
+    border-radius: 0.3rem;
+    padding: 2rem;
+    position: relative;
+    width: 80%;
+    height: 35rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.form-title {
+    border: solid 1px var(--col1);
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: -1.5rem;
+}
+
+.form-wrapper {
+    margin-top: 2rem;
+}
+
+#fname {
+    width: 100%;
+    height: 3rem;
+    border: solid 1px var(--col1);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#email-input {
+    width: 100%;
+    height: 3rem;
+    border: solid 1px var(--col1);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#message {
+    width: 100%;
+    height: 5rem;
+    border: solid 1px var(--col1);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#submit-button {
+    width: 100%;
+    height: 3rem;
+    border: solid 1px var(--col1);
+    background-color: var(--col3);
+    color: #ffffff;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (min-width:40rem) {
+
+.contact-form {
+    height: 25rem;
+}
+
+.namewrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+
+.name{
+    width: 50%;
+}
+
+.email {
+    width: 50%;
+}
+
+#submit-button {
+    width: 25%;
+}
+
+}
