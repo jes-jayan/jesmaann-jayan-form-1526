@@ -11,7 +11,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 function formValidater() {
     
     let data = {};
-    let err = [];
+    let errors = [];
 
 // FULL-NAME VALIDATION
 if (fname.value) {
@@ -19,7 +19,7 @@ if (fname.value) {
     data.fullName = fname.value.trim();
 
 } else {
-    err.push('Please enter your name!');
+    errors.push('Please enter your name!');
 }
 
 // EMAIL VALIDATION
@@ -28,11 +28,11 @@ if (email.value) {
     if (emailRegex.test(email.value)) {
         data.email = email.value;
       } else {
-        err.push('Please enter a valid email!');
+        errors.push('Please enter a valid email!');
       }
 
 } else {
-    err.push('Please enter your email!');
+    errors.push('Please enter your email!');
 }
 
 // MESSAGE VALIDATION
@@ -41,13 +41,13 @@ if (msg.value) {
     data.message = msg.value.trim();
 
 } else {
-    err.push('Please enter your message!');
+    errors.push('Please enter your message!');
 }
 
 console.log('COLLECTED DATA:');
 console.log(data);
 console.log('ERRORS:');
-console.log(err);
+console.log(errors);
 
 }
 
